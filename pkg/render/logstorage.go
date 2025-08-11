@@ -740,6 +740,7 @@ func (es *elasticsearchComponent) nodeSetTemplate(pvcTemplate corev1.PersistentV
 			"ingest",
 			"master",
 			"remote_cluster_client",
+			"transform",
 		},
 		"cluster.max_shards_per_node": 10000,
 		// Disable geoip downloader. This removes an error from the startup logs, because our network policy blocks it.
